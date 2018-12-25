@@ -44,7 +44,7 @@ struct JSONInt : Decodable {
     }
     
     init(from decoder: Decoder) throws {
-        let value = try? JSONValue(from: decoder)
+        let value = try? DecodeValue(from: decoder)
         switch value {
         case .some(.int(let int)):
             self.value = int
