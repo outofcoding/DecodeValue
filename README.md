@@ -2,7 +2,7 @@
 Decodable(Codable)의 parsing에 도움을 줍니다.
 
 # Use Decodable
-// json value is {name: "DH", age: 100}
+json value is {name: "DH", age: 100}
 
 ```swift
 struct People : Decodable {
@@ -10,9 +10,8 @@ struct People : Decodable {
   var age: Int
 }
 ```
-// People Data is name = DH, age = 100
-
-// json value is {age: 100}. and run. go error case
+People Data is name = DH, age = 100
+json value is {age: 100}. parsing error.
 
 # Use DecodeValue
 
@@ -22,18 +21,30 @@ struct People : Decodable {
   var age: JSONInt
 }
 ```
-// People Data is name.value = "", age.value = ""
-// parsing is not error. just value is default
+People Data is name.value = "", age.value = 100
+parsing is not error. just value is default
+
+
+# Use JSONValue
+
+```swift
+struct People : Decodable {
+  var name: JSONValue<String>
+  var age: JSONValue<Int>
+}
+```
+People Data is Generic Data.
+people.name.value is String value
 
 # Use Operator
 
-// * operator use. JSONString.value
+* operator. same JSONString.value
 ```swift
 let response = try JSONDecoder().decode(People.self, from: data) // data is some
 print("name = \(*response.name)")
 ```
 
-// <~ operator use. right to left
+// <~ operator. same right to left
 ```swift
 var name: String = ""
 
