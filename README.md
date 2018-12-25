@@ -2,16 +2,17 @@
 Decodable(Codable)의 parsing에 도움을 줍니다.
 
 # Use Decodable
-json value is {name: "DH", age: 100}
-
 ```swift
 struct People : Decodable {
   var name: String
   var age: Int
 }
 ```
+json value is {name: "DH", age: 100}<br/>
 People Data is name = DH, age = 100
-json value is {age: 100}. parsing error.
+
+json value is {age: 100}.<br/>
+parsing error.
 
 # Use DecodeValue
 
@@ -21,9 +22,9 @@ struct People : Decodable {
   var age: JSONInt
 }
 ```
-People Data is name.value = "", age.value = 100
+json value is {age: 100}.<br/>
+People Data is name.value = "", age.value = 100<br/>
 parsing is not error. just value is default
-
 
 # Use JSONValue
 
@@ -33,7 +34,7 @@ struct People : Decodable {
   var age: JSONValue<Int>
 }
 ```
-People Data is Generic Data.
+People Data is Generic Data.<br/>
 people.name.value is String value
 
 # Use Operator
