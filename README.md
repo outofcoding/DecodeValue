@@ -39,13 +39,13 @@ people.name.value is String value
 
 # Use Operator
 
-* operator. same JSONString.value
+```* operator. same JSONString.value```
 ```swift
 let response = try JSONDecoder().decode(People.self, from: data) // data is some
 print("name = \(response.*name)")
 ```
 
-// <~ operator. same right to left
+```<~ operator. same right to left```
 ```swift
 var name: String = ""
 
