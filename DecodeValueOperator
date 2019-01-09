@@ -1,0 +1,12 @@
+
+
+prefix operator *
+infix operator <~
+
+prefix func * (value: JString) -> (String) {
+    return value.value
+}
+
+func <~ (lhs: inout String, rhs: JString) {
+    lhs = rhs.value
+}
