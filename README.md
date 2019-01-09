@@ -42,7 +42,7 @@ people.name.value is String value
 ```* operator. same JSONString.value```
 ```swift
 let response = try JSONDecoder().decode(People.self, from: data) // data is some
-print("name = \(response.*name)")
+print("name = \(*response.name)")
 ```
 
 ```<~ operator. same right to left```
