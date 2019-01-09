@@ -24,14 +24,14 @@ prefix operator *
 postfix operator *
 infix operator <~
 
-prefix func * (original: JString) -> String {
+prefix func * (original: JSONString) -> String {
     return original.value
 }
 
-postfix func * (original: JString) -> String {
+postfix func * (original: JSONString) -> String {
     return original.value
 }
 
-func <~ (lhs: inout String, rhs: JString) {
+func <~ (lhs: inout String, rhs: JSONString) {
     lhs = rhs.value
 }
