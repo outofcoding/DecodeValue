@@ -21,10 +21,15 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 prefix operator *
+postfix operator *
 infix operator <~
 
-prefix func * (value: JString) -> (String) {
-    return value.value
+prefix func * (original: JString) -> String {
+    return original.value
+}
+
+postfix func * (original: JString) -> String {
+    return original.value
 }
 
 func <~ (lhs: inout String, rhs: JString) {
