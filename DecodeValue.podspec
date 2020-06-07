@@ -1,9 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'DecodeValue'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'Help De(codable) parsing.'
   s.description      = <<-DESC
   Help De(codable) parsing
+  You happy
   DESC
 
   s.homepage         = 'https://github.com/outofcoding/DecodeValue'
