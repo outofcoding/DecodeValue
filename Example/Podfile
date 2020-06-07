@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DecodeValue_Example' do
+  pod 'DecodeValue', :path => '../'
+
+  target 'DecodeValue_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
