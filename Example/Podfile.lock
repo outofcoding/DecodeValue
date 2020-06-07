@@ -1,0 +1,23 @@
+PODS:
+  - DecodeValue (0.1.0):
+    - Optional.Extension
+  - Optional.Extension (0.1.0)
+
+DEPENDENCIES:
+  - DecodeValue (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Optional.Extension
+
+EXTERNAL SOURCES:
+  DecodeValue:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DecodeValue: a8e84a4887c891ee20148ac29a57209566cc00d5
+  Optional.Extension: be88c67094eb851e440fe5d70d9e825dcd64a61e
+
+PODFILE CHECKSUM: 9d042f231003bd0b150fc85d8d3f70549806fb1c
+
+COCOAPODS: 1.8.4

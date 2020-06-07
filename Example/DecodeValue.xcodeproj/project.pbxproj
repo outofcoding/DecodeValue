@@ -28,9 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		067F124EE260D670A02F7B1F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		10DAED62761C9261B392E1E9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		13C5E0632D4F91399A9E62B1 /* DecodeValue.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DecodeValue.podspec; path = ../DecodeValue.podspec; sourceTree = "<group>"; };
+		067F124EE260D670A02F7B1F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		10DAED62761C9261B392E1E9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		13C5E0632D4F91399A9E62B1 /* DecodeValue.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DecodeValue.podspec; path = ../DecodeValue.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		20EE4D0ACCE321877C7B2026 /* Pods-DecodeValue_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecodeValue_Example.release.xcconfig"; path = "Target Support Files/Pods-DecodeValue_Example/Pods-DecodeValue_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5289DDC3A7C171D6CD7028B8 /* Pods-DecodeValue_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecodeValue_Tests.release.xcconfig"; path = "Target Support Files/Pods-DecodeValue_Tests/Pods-DecodeValue_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* DecodeValue_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DecodeValue_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,7 +156,6 @@
 				85DBF4AD8E838A4EF6C0943B /* Pods-DecodeValue_Tests.debug.xcconfig */,
 				5289DDC3A7C171D6CD7028B8 /* Pods-DecodeValue_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -270,10 +270,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DecodeValue_Example/Pods-DecodeValue_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DecodeValue/DecodeValue.framework",
+				"${BUILT_PRODUCTS_DIR}/Optional.Extension/Optional_Extension.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DecodeValue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Optional_Extension.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

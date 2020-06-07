@@ -1,0 +1,27 @@
+{
+  "name": "DecodeValue",
+  "version": "0.1.0",
+  "summary": "Help De(codable) parsing.",
+  "description": "Help De(codable) parsing",
+  "homepage": "https://github.com/outofcoding/DecodeValue",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "outofcoding": "outofcoding@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/outofcoding/DecodeValue.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DecodeValue/Classes/**/*",
+  "dependencies": {
+    "Optional.Extension": [
+
+    ]
+  }
+}
